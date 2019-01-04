@@ -34,11 +34,3 @@ class LorealSpider(scrapy.Spider):
             item['attr'] = product.css("p::text").extract_first().strip()
             item['price'] = product.css("p.price::text").extract_first().strip()
             yield item
-    
-    
-    #       for title in response.css('.post-header>h2'):
- #           yield {'title': title.css('a ::text').extract_first()}
-   #     imgs = response.css("div.product-img").extract()
-
- #       for next_page in response.css('div.prev-post > a'):
- #           yield response.follow(next_page, self.parse)
