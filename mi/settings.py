@@ -57,7 +57,7 @@ USER_AGENT = random.choice(USER_AGENT_LIST)
 
 BOT_NAME = 'mi'
 IMAGES_STORE = 'C:\Project\mi\image'
-
+FILES_STORE = 'C:\Project\mi\file'
 
 SPIDER_MODULES = ['mi.spiders']
 NEWSPIDER_MODULE = 'mi.spiders'
@@ -108,8 +108,8 @@ COOKIES_ENABLED = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'mi.pipelines.MiPipeline': 300,
-	'mi.pipelines.LorealImagesPipeline':350,
+    'mi.pipelines.LorealProductInfoPipeline': 300,
+	'mi.pipelines.LorealProductImagesPipeline':200,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

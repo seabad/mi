@@ -17,8 +17,8 @@ class LorealProductItem(scrapy.Item):
     # define the fields for your item here like:
     title = scrapy.Field()        
     subtitle = scrapy.Field()
-    imgurl = scrapy.Field()
-    imgname = scrapy.Field()
+    image_urls = scrapy.Field()
+    image_paths = scrapy.Field()
     attr = scrapy.Field()
     price = scrapy.Field()
     pass
